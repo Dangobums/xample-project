@@ -55,26 +55,26 @@ const onSelect = (value) => {
   selectedValue.value = value;
   console.log(selectedValue.value);
 };
-const onPanelChange = (value) => {
-  date.value = value;
-};
+// const onPanelChange = (value) => {
+//   date.value = value;
+// };
 
-const getMonths = (value) => {
-  const localeData = value.localeData();
-  const months = [];
+// const getMonths = (value) => {
+//   const localeData = value.localeData();
+//   const months = [];
 
-  for (let i = 0; i < 12; i++) {
-    months.push(localeData.monthsShort(value.month(i)));
-  }
-};
-const getYears = (value) => {
-  const year = value.year();
-  const years = [];
+//   for (let i = 0; i < 12; i++) {
+//     months.push(localeData.monthsShort(value.month(i)));
+//   }
+// };
+// const getYears = (value) => {
+//   const year = value.year();
+//   const years = [];
 
-  for (let i = year - 10; i < year + 10; i += 1) {
-    years.push(i);
-  }
-};
+//   for (let i = year - 10; i < year + 10; i += 1) {
+//     years.push(i);
+//   }
+// };
 </script>
 <style>
 .ant-picker-calendar .ant-picker-panel {
